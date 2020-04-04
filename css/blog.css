@@ -1,0 +1,16 @@
+body {
+  background-color: rgba(0, 128, 75, 0.133);
+}
+li{
+list-style-type: none;
+text-decoration: none;
+}
+
+ a {
+   text-decoration: none;
+   color:indigo;
+ }
+
+ a:hover {
+   color: pink;
+ }
