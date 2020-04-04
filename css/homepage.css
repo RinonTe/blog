@@ -1,0 +1,80 @@
+body {
+  background-color: rgb(245, 245, 245);
+  background-image:  linear-gradient(rgba(0,0,0,.4) 0%, rgba(0,0,0,.4) 100%),url(../images/images/bg_desktop.jpg);
+   background-size: 100% 50%;
+   background-repeat: no-repeat;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  top: -4rem;
+  left: 40%;
+}
+@media (max-width:700px) {
+  nav ul {
+    position: relative;
+    top: 0rem;
+    left: 0%;
+    line-height: 1.5rem;
+  }
+
+}
+main > header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+div {
+margin-inline-start: 2rem;
+}
+img {
+margin-block-start: 12rem;
+width: 200px;
+
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: 600;
+  margin: 0;
+
+}
+
+h2 {
+  font-style: italic;
+  font-size: 36px;
+}
+ em {
+   color: rgba(0, 0, 0, 0.986);
+   font-family: sans-serif;
+   font-style: italic;
+   font-weight: bold;
+   line-height: 2rem;
+ }
+ li {
+  text-decoration-color:blue;
+  list-style-type: none;
+  margin-inline-end: 2rem;
+ }
+
+a {
+text-decoration: none;
+text-transform: uppercase;
+color: white;
+}
+ a:hover {
+   color: yellowgreen;
+ }
