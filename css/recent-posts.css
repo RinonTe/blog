@@ -1,0 +1,36 @@
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  top: -4rem;
+  left: 40%;
+
+}
+
+em {
+  color: rgba(0, 0, 0, 0.986);
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 2rem;
+}
+li {
+ text-decoration-color:blue;
+ list-style-type: none;
+ margin-inline-end: 2rem;
+}
+
+nav a {
+font-weight: bolder;
+}
+
+nav a {
+text-decoration: none;
+text-transform: uppercase;
+color:black;
+}
+a:hover {
+  color: yellowgreen;
+}
