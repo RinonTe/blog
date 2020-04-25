@@ -1,11 +1,18 @@
+:root {
+  --margin-start: 2rem;
+}
+html {
+
+  border-style: dotted;
+}
 body {
-  background-color: rgb(245, 245, 245);
-  background-image:  linear-gradient(rgba(0,0,0,.4) 0%, rgba(0,0,0,.4) 100%),url(../images/images/bg_desktop.jpg);
-   background-size: 100% 50%;
-   background-repeat: no-repeat;
+  /*background-color: rgb(245, 245, 245);*/
+  background: linear-gradient(to bottom, rgba(50, 0, 130, 0.3) 0% 20%, rgba(0, 238, 255, 0.144) 20% 90%, rgba(0, 4, 255, 0.253)95% 100%);
+  border-top-color: rgb(161, 127, 194);
    margin: 0;
    display: flex;
    flex-direction: column;
+
 }
 
 nav ul {
@@ -14,32 +21,45 @@ nav ul {
   flex-wrap: wrap;
   position: relative;
   top: -4rem;
-  left: 40%;
+  justify-content: center;
+ line-height: 2rem;
+ margin-inline-start: var(--margin-start);
 }
-@media (max-width:700px) {
+
+div {
+  margin-inline-start: var(--margin-start);
+  }
+ img{
+   width: 30%;
+   height: 30%;
+   border-radius: 10%;
+ }
+
+@media (max-width:1200px) {
   nav ul {
     position: relative;
     top: 0rem;
     left: 0%;
     line-height: 1.5rem;
+
+  }
+  img {
+    width: 200px;
   }
 
 }
-main > header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+@media (max-width:400px) {
+  img {
+    width: 110px;
+    height: 110px;
 
+  }
+  div {
+    margin-inline-start: 0;
+  }
 }
-div {
-margin-inline-start: 2rem;
-}
-img {
-margin-block-start: 12rem;
-width: 200px;
 
-}
+
 
 h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -56,6 +76,10 @@ h1 {
 h2 {
   font-style: italic;
   font-size: 36px;
+  margin-inline-start: var(--margin-start);
+  margin-block-start: 0;
+  margin-block-end: 0;
+
 }
  em {
    color: rgba(0, 0, 0, 0.986);
@@ -65,16 +89,30 @@ h2 {
    line-height: 2rem;
  }
  li {
+ 
   text-decoration-color:blue;
   list-style-type: none;
-  margin-inline-end: 2rem;
+  margin-inline-end: var(--margin-start);
  }
 
 a {
+border: double;
+border-color: greenyellow;
+padding: 0.5rem;
 text-decoration: none;
 text-transform: uppercase;
-color: white;
+color: rgba(255, 0, 106, 0.938);
 }
  a:hover {
-   color: yellowgreen;
+  border: dotted;
+  border-color: yellow;
+   padding: 0.5rem;
+   color: black;
+   transition: ease-in-out;
+   transition-duration: 1.5s;
  }
+
+ main {
+border-top: 1px solid;
+border-bottom: 1px solid;
+}
